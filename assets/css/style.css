@@ -49,6 +49,14 @@ a {
     text-decoration: none;
 }
 
+#banner {
+    height: 600px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/bannerimage.png");
+    background-size: cover;
+    background-position: center;
+}
 
 
 
@@ -57,6 +65,16 @@ a {
     padding-top: 50px;
     display: flex;
     flex-direction: row;
+
+}
+div{
+
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-left: solid #2a607c 5px;
 
 }
 
@@ -81,4 +99,23 @@ p{
     content: "\a\a";
     white-space: pre;
 
+}
+
+.workExamples{
+    border: solid #6395ff 5px;
+    transition: opacity 0.5s ;
+
+}
+.workExamples:hover{
+
+    opacity: 0.75;
+    
+}
+
+
+figcaption{
+
+    position:relative;
+    bottom: 50px;
+    right:35%;
 }
