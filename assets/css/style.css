@@ -48,6 +48,19 @@ a {
     color: #ffffff;
     text-decoration: none;
 }
+box a div{
+    position: absolute;
+    top:91%;
+    right:8.9%;
+    border: solid 10px #6395ff ;
+    color: #fff;
+    background-color: #6395ff;
+    width:fit-content;
+    font-size: 50px;
+    
+    
+
+}
 
 #banner {
     height: 600px;
@@ -60,25 +73,25 @@ a {
 
 
 
-.cont{
+container{
 
     padding-top: 50px;
     display: flex;
     flex-direction: row;
 
 }
+
 div{
 
     
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    display: flex;
+    
     border-left: solid #2a607c 5px;
+    width: auto;
 
 }
 
-.item{
+container h1{
     font-size: 36px;
     min-width: 200px;
     padding-left: 100px;
@@ -87,7 +100,7 @@ div{
 
 }
 
-p{
+textbox p{
     padding-left: 10px;
     border-left:solid #2a607c 5px;
     
@@ -101,9 +114,32 @@ p{
 
 }
 
+box{
+
+    padding-left: 10px;
+    border-left:solid #2a607c 5px;
+}
+
+.griddy{
+    
+    
+    display: grid;
+    grid-template-columns: 50% 50%;
+   
+    
+    
+
+}
+
+
+
+
 .workExamples{
     border: solid #6395ff 5px;
     transition: opacity 0.5s ;
+   
+    width:45%;
+    height: 25%;
 
 }
 .workExamples:hover{
@@ -112,10 +148,43 @@ p{
     
 }
 
+#showcase{
+    height: 45%;
+    width:90.2%
+    
+    
+}
 
 figcaption{
-
-    position:relative;
-    bottom: 50px;
+    position:absolute;
+    bottom: 75px;
     right:35%;
+    color: #fff;
+    font-size: 22px;
+
+    background: #6395ff;
+    border:solid #6395ff 20px ;
+}
+
+#contact{
+    
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+    min-width: 100px;
+
+}
+
+container div{
+    width: 80%;
+    
+    
+}
+
+container div p{
+    padding-left: 10%;
+    font-size: 30px;
+    
+
+
 }
