@@ -61,6 +61,7 @@ header div ul li a {
 
 
 
+/*padding and flex box for all sections*/
 container{
 
     padding-top: 50px;
@@ -69,87 +70,47 @@ container{
 
 }
 
-/*div{
-
-    
-    display: flex;
-    
-    border-left: solid #2a607c 5px;
-    width: auto;
-
-}*/
-
+/*font and padding for all section headers*/
 container h1{
     font-size: 36px;
     min-width: 200px;
     padding-left: 100px;
-    
-    
-
 }
 
-textbox p{
+/*styling and paragraphing for text*/
+container textbox p{
     padding-left: 10px;
     border-left:solid #2a607c 5px;
-    
-    
-
 }
-
 .content-split::after{
     content: "\a\a";
     white-space: pre;
-
 }
 
-box{
-
+/*section border and padding*/
+container box{
     padding-left: 10px;
     border-left:solid #2a607c 5px;
 }
 
-.griddy{
-    
-    
+/*setting up grid for portfolio images*/
+.griddy{   
     display: grid;
     grid-template-columns: 50% 50%;
-
-   
-    
-    
-
-}
-box div{
-
-    position: relative;
-    
-    
 }
 
 
-
-
-
-.workExamples{
-    border: solid #6395ff 5px;
-    transition: opacity 0.5s ;
-    width: 45%;
-   
-   
-
-}
-.workExamples:hover{
-
-    opacity: 0.75;
-    
-}
-
+/*larger showcase project*/
 #showcase{
     height: 45%;
     width:90.2%
-    
-    
+   
 }
+/*parent position for showcase label*/
+box div{
+    position: relative;
+}
+/*showcase label styling and background, aligning with top right corner of image (parent)*/
 .showcase-label{
     position: absolute;
     top: 0%;
@@ -159,42 +120,38 @@ box div{
     background-color: #6395ff;
     width:fit-content;
     font-size: 50px;
-    
-    
-
 }
 
+/*secondary portfolio image styling. setting in 2x2 pattern*/
+.workExamples{
+    border: solid #6395ff 5px;
+    transition: opacity 0.5s ;
+    width: 45%;
+}
+/*transition animation when hovering*/
+.workExamples:hover{
 
+    opacity: 0.75;
+    
+}
+/*contact section display settings and spacing*/
+#contact{   
+    display: flex;
+    flex-direction: row;
+    padding-left: 40px;
+    min-width: 100px;
+}
 
-
-
-
+/*styling links section and border*/
 #links{
 
     border-left: solid #2a607c 5px;
     width: 100%;
     display: flex;
-    
-
-
 }
+/*set link spacing and font size*/
 #links p{
     padding-left: 10%;
-}
-container div p{
-    
     font-size: 30px;
-    
-    
-
-
 }
 
-#contact{
-    
-    display: flex;
-    flex-direction: row;
-    padding-left: 20px;
-    min-width: 100px;
-
-}
