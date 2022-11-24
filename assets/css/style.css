@@ -152,6 +152,56 @@ box div{
 /*set link spacing and font size*/
 #links p{
     padding-left: 10%;
-    font-size: 30px;
+    font-size: 150%;
 }
+
+
+/*changes in style when screen width shrinks*/
+@media screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+    }
+    header div ul li a {
+        color: #000;
+        text-decoration: none;
+    } 
+    
+    .showcase-label{
+        position: absolute;
+        top: 0%;
+        right:10%;
+        border: solid 2px #6395ff ;
+        color: #fff;
+        background-color: #6395ff;
+        width:fit-content;
+        font-size: 30px;
+    }
+
+    #contact{   
+        display: flex;
+        flex-direction: row;
+        
+        min-width: 100px;
+    }
+    /*styling links section and border*/
+    #links{
+
+        border-left: solid #2a607c 5px;
+        width: 100%;
+        display: flex;
+    }
+    /*set link spacing and font size*/
+    #links p{
+        padding-left: 2%;
+        font-size: 20px;
+    }
+    
+
+
+  
+    main {
+      max-width: 1200px;
+    }
+  }
+  
 
